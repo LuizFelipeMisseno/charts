@@ -3,7 +3,7 @@ import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutterappchart/developer_series.dart';
 
 class Home extends StatelessWidget {
-  final List data = [
+  final List<DeveloperSeries> data = [
     DeveloperSeries(
       ano: 2017,
       desenvolvedores: 40000,
