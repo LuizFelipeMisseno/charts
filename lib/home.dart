@@ -33,6 +33,17 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center());
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Gráficos'),
+      ),
+      body: ListView.builder(
+        itemCount: data.length,
+        itemBuilder: (BuildContext context, int index) {
+          return DeveloperChart(data: data);
+        },
+      ),
+      
+    );
   }
 }
